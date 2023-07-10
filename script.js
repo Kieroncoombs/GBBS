@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const toggleBtn = document.getElementById("toggleBtn");
     const navSection = document.getElementById("navSection");
     const main = document.querySelector("main");
+    const body = document.querySelector("body")
     const valueDisplay = document.querySelectorAll(".achievements-num")
     const interval = 500;
     const achievements = document.getElementById("acheivements")
@@ -14,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
   
     function toggleNav() {
       if (showNavbar) {
-        document.body.style.overflow = "hidden";
+        body.classList.add("nav-is-on")
         navSection.classList.add("nav-section-open");
         toggleBtn.classList.add("btn-bars-on");
       } else {
-        document.body.style.overflow = "auto";
+        body.classList.remove("nav-is-on")
         navSection.classList.remove("nav-section-open");
         toggleBtn.classList.remove("btn-bars-on");
       }

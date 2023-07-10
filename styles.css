@@ -78,8 +78,8 @@ body{
     box-sizing: border-box;
 }
 
-.backblur{
-    box-shadow: var(--background-color);
+.nav-is-on{
+    overflow: hidden;
 }
 .nav-section-close{
     display: flex;
@@ -131,6 +131,9 @@ img{
 li, a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
+a:hover {
+    color: rgb(110, 110, 110);
 }
 @media only screen and (max-width: 770px) {
     .small-navbar{
