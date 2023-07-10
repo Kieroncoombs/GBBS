@@ -703,6 +703,15 @@ cite{
         margin: 0 20px;
         padding: 40px 0;
     }
+    .goal-img-wrap{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto 0 auto;
+       }
+       .goals-img{
+        width: 400px;
+        height: 250px;
+    }
 }
 @media only screen and (max-width: 770px) {
    .goal{
@@ -711,7 +720,8 @@ cite{
     margin-top: 0;
    } 
    .goal-img-wrap{
-    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 100%;
    }
    .g-1, .g-2, .g-3{
     margin-top: 50px;
@@ -720,8 +730,8 @@ cite{
 @media only screen and (max-width: 440px) {
   
     .goals-img{
-      width: 330px;
-      height: 200px;
+      width: 100%;
+      height: 100%;
       margin: 0;
       }
    }
@@ -850,7 +860,6 @@ li{
     .donate-icons{
         color: white;
         background-color: var(--background-color);
-        padding: 20px 10px;
     }
 
     .donate-carousel .donate-carousel-actions {
@@ -872,11 +881,11 @@ li{
         height: 40px;
     }
     
-    .donate-carousel .donate-carousel-actions .donate-btn-small#carousel-button-prev {
-        margin-left: -30px; 
+    .donate-carousel .donate-carousel-actions#carousel-button-prev {
+        
     }
     
-    .donate-carousel .donate-carousel-actions .donate-btn-small#carousel-button-next {
+    .donate-carousel .donate-carousel-actions#carousel-button-next {
         margin-right: -30px;  
     }
     @keyframes fadeVisibility {
@@ -902,6 +911,23 @@ li{
         padding: 20px;
         background-color: var(--background-color);
     }
+    .donate-btn-left{
+        margin-left: -30px; 
+    }
+    .donate-btn-right{
+        margin-right: -30px; 
+    }
+    .donate-btn-left, .donate-btn-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-color);
+    }
+    .donate-bg-box{
+        padding: 10px;
+        height: 60vh;
+    }
+    
 }
 @media only screen and (max-width: 420px) {
     .donate-carousel{
@@ -912,11 +938,8 @@ li{
         padding: 10px;
         height: 90vh;
     }
-    .donate-btn-left, .donate-btn-right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
+
 }
 
 /* FOOTER */
