@@ -375,15 +375,13 @@ span{
         display: block;
     }
     .hero-cover{
-        height: 100vh;
+        height: 85vh;
         background: url(imgs/herobgsmall.png) no-repeat center center; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
         background-position: top;
-        position: relative;
-        z-index: 0;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -434,7 +432,6 @@ span{
     margin: 20px;
     font-size: 1rem;
     background-color: var(--decal-color);
-    border: 4px solid var(--decal-color);
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   } 
   .icon {
@@ -462,9 +459,13 @@ span{
   p{
     text-align:start;
   }
+  .mission-key{
+    width: 210px;
+    height: 240px;
+  }
   .icon {
-    height: 135px;
-    width: 135px;
+    height: 100px;
+    width: 100px;
   }
   
   h5 { 
@@ -712,7 +713,7 @@ cite{
    .goal-img-wrap{
     margin: 0 auto 0 auto;
    }
-   .g-2, .g-3{
+   .g-1, .g-2, .g-3{
     margin-top: 50px;
    }
 }
@@ -905,10 +906,16 @@ li{
 @media only screen and (max-width: 420px) {
     .donate-carousel{
         margin: 20px;
-        max-width: 300px;
+        max-width: 320px;
     }
     .donate-bg-box{
         padding: 10px;
+        height: 90vh;
+    }
+    .donate-btn-left, .donate-btn-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
