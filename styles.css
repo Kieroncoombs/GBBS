@@ -139,7 +139,7 @@ a:hover {
     .small-navbar{
         top: 0;
         width: 100%;
-        padding: 0 10px;
+        padding: 0px 10px;
         position: fixed;
         z-index: 5;
         display: flex;
@@ -885,7 +885,7 @@ li{
     }
     
     .donate-carousel .donate-carousel-actions#carousel-button-prev {
-        
+        margin-left: -30px; 
     }
     
     .donate-carousel .donate-carousel-actions#carousel-button-next {
@@ -988,5 +988,121 @@ footer{
 @media only screen and (max-width: 770px) {
     .footer-info{
         flex-direction: column;
+    }
+}
+
+
+ /* STORY SECTION */
+ /* STORY SECTION */
+ /* STORY SECTION */
+ /* STORY SECTION */
+ /* STORY SECTION */
+
+.story-hero{
+    background-color: var(--decal-color);
+}
+.s-h-wrapper{
+    max-width: 80rem;
+    margin: 0 auto 0px auto; 
+}
+.s-h-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.s-h-left, .s-h-right{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.s-h-right{
+    width: 60%;
+}
+.s-h-left{
+    width: 40%;
+}
+.s-h-head{
+    color: var(--negitive-color);
+}
+.s-h-img{
+    max-width: 100%;
+    width: 675px;
+    height: auto;
+}
+@media only screen and (max-width: 770px) {
+    .s-h-box{
+        flex-direction: column-reverse;
+    }
+    .s-h-img{
+        padding-top: 60px;
+    }
+    .s-h-head{
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+    .s-h-right{
+        width:100%;
+    }
+    .s-h-left{
+        width: 100%;
+    }
+}
+
+/* STORY CONTENT */
+
+
+.story-content{
+    background-color: var(--background-color);
+}
+.s-c-wrapper{
+    max-width: 80rem;
+    margin: 0 auto 0px auto; 
+    padding-top: 50px;
+}
+.s-c-box{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.s-c-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.s-c-left{
+    width: 60%;
+}
+.s-c-img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+}
+@media only screen and (max-width: 1100px) {
+    .s-c-wrapper{
+        margin: 0 20px;
+    }
+    .s-c-box{
+        flex-direction:column-reverse;
+    }
+    .s-c-img{
+        max-width: 100%;
+        width: 80%;
+        height: auto;
+    }
+    .s-c-right{
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .s-c-left{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .s-c-img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 }
