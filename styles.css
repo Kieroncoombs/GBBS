@@ -72,6 +72,9 @@ h5 {
 body{
     scroll-behavior: smooth;
 }
+img{
+    display: block;
+}
 *{
     margin: 0;
     padding: 0;
@@ -113,11 +116,11 @@ body{
     height: 40px;
     display: none;
 }
-img{
+.big-logo{
     width: 150px;
     height: 40px;
-    margin: 0 5px;
     display: flex;
+    margin: 0 5px;
     align-items: center;
     
 }
@@ -1011,10 +1014,9 @@ footer{
     flex-direction: row;
 }
 .s-h-left, .s-h-right{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     text-align: center;
+    margin: auto 0;
 }
 .s-h-right{
     width: 60%;
@@ -1024,10 +1026,11 @@ footer{
 }
 .s-h-head{
     color: var(--negitive-color);
+    margin: 0;
 }
 .s-h-img{
     max-width: 100%;
-    width: 675px;
+    width: 764px;
     height: auto;
 }
 @media only screen and (max-width: 770px) {
@@ -1036,6 +1039,7 @@ footer{
     }
     .s-h-img{
         padding-top: 60px;
+        margin: 0;
     }
     .s-h-head{
         padding-top: 15px;
@@ -1061,20 +1065,24 @@ footer{
     padding-top: 50px;
 }
 .s-c-box{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     text-align: start;
     flex-direction: row;
-    margin-bottom: 30px;
 }
 .s-c-right{
-    display: flex;
-    justify-content: flex-end;
+    display: inline-block;
+    margin-inline: auto;
 }
 .s-c-left{
+    margin-inline: auto;
+    display: inline-block;
     width: 60%;
 }
 .s-c-img{
+    margin-inline: auto;
+    
     max-width: 100%;
     width: 500px;
     height: auto;
