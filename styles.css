@@ -59,12 +59,10 @@ h2{
     font-weight: 800;
     margin-bottom: 15px;
 }
-
 h3{
     font-size: var(--h3);
     color: var(--postive-color);
     font-family: var(--fonts);
-
 }
 h5 {
     color: var(--negitive-color);
@@ -72,7 +70,11 @@ h5 {
     font-family: var(--fonts);
     margin: 0 25px;
     text-align: center;
-  }
+}
+span{
+    position: relative;
+    z-index: 1;
+}
 body{
     scroll-behavior: smooth;
 }
@@ -88,6 +90,35 @@ img{
 .alt-col{
     color: var(--postive-color);
 }
+.wrapper{
+    max-width: 80rem;
+    margin: 0 auto 0 auto;
+    padding-top: 40px;
+}
+.alt-wrapper{
+    max-width: 80rem;
+    margin: 0 auto 0px auto; 
+}
+.alt-section{
+    background-color: #DAA520;
+}
+@media only screen and (max-width: 1100px) {
+    .wrapper{
+        margin: 0 20px;
+        padding-top: 50px;
+    }
+    .alt-wrapper{
+        margin: 0 20px; 
+        padding-top: 0px;
+    }
+}
+
+
+    /* CUSTOM CLASSES */
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -282,10 +313,6 @@ a:hover {
     overflow: hidden;
     transition: 0.2s ease-in;
 }
-span{
-    position: relative;
-    z-index: 1;
-}
 .donate-btn::after{
     content: '';
     position: absolute;
@@ -422,11 +449,7 @@ span{
 
 /* MISSION SECTION*/
 
-.mission-wrapper{
-    max-width: 80rem;
-    margin: 0 auto 0px auto; 
-}
-.mission-header{   
+.center-header{   
     text-align: center;
 }
 .mission-left{
@@ -439,22 +462,20 @@ span{
     color: var(--postive-color);
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-  }
-  
-  .mission-key {
+}  
+.mission-key {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
     width: 260px;
     height: 300px;
     margin: 20px;
     font-size: 1rem;
     background-color: var(--decal-color);
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-  } 
-  .icon {
+} 
+.icon {
     text-align: center;
     font-size: 7rem;
     padding: 10px;
@@ -465,14 +486,6 @@ span{
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 50px;
-
-}
-@media only screen and (max-width: 1100px) {
-  .mission-wrapper{
-    margin: 0 20px; 
-}
-}
-@media only screen and (max-width: 770px) {
 
 }
 @media only screen and (max-width: 440px) {
@@ -486,22 +499,11 @@ span{
   .icon {
     font-size: 6rem;
   }
-  
-  h5 { 
-    font-size: 1.1rem;
-    margin: 0 25px;
-  }
 }
 
 /* QUOTE SECTION */
 
-.quote-section{
-    background-color: #DAA520;
-}
-.quote-wrapper{
-    max-width: 80rem;
-    margin: 0 auto 0px auto;
-}
+
 .quote {
     padding: 20px 0;
     text-align: center;
@@ -575,7 +577,7 @@ cite{
 
 }
 .article-linkbox{
-    margin: 15px 0;
+    margin-top: 15px;
 }
 @media only screen and (max-width: 1100px) {
     .article-wrapper{
@@ -615,8 +617,6 @@ cite{
     gap: 70px;
     justify-content: center;
     margin: 0 auto 0 auto;
-    padding-top: 30px;
-
 }
 .achievements-diagram{
     height: 450px;
@@ -683,6 +683,12 @@ cite{
         justify-content: center;
     }
 }
+@media only screen and (max-width: 770px) {
+    .achievements-box{
+        gap: 40px;
+        padding: 10px 0;
+    }
+}
 
 /* GOALS SECTION */
 
@@ -742,8 +748,8 @@ cite{
     width: 100%;
     height: 100%;
    }
-   .g-1, .g-2, .g-3{
-    margin-top: 50px;
+    .g-2, .g-3{
+    margin-top: 30px;
    }
 }
 @media only screen and (max-width: 440px) {
@@ -1014,9 +1020,6 @@ footer{
  /* STORY SECTION */
  /* STORY SECTION */
 
-.story-hero{
-    background-color: var(--decal-color);
-}
 .s-h-wrapper{
     max-width: 80rem;
     margin: 0 auto 0px auto; 
