@@ -77,6 +77,7 @@ span{
 }
 body{
     scroll-behavior: smooth;
+    background-color: #131313;
 }
 img{
     display: block;
@@ -107,6 +108,9 @@ padding-top: 45px;
 }
 .odd-section{
     background-color: #202020;
+}
+.center-header{   
+    text-align: center;
 }
 @media only screen and (max-width: 1100px) {
     .wrapper{
@@ -458,9 +462,7 @@ a:hover {
 
 /* MISSION SECTION*/
 
-.center-header{   
-    text-align: center;
-}
+
 .mission-left{
     text-align: center;
     color: var(--postive-color);
@@ -554,6 +556,7 @@ q{
     width: 350px;
     height: 220px;
     margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .article-content{
     display: flex;
@@ -572,6 +575,7 @@ q{
     font-family: 'Poppins', sans-serif;
     font-size: .9rem;
     margin: 10px 0;
+    
 }
 .article-link{
     margin: 10px 0;
@@ -596,6 +600,7 @@ cite{
     width: 330px;
     height: 200px;
     margin: 0;
+    
     }
  }
 
@@ -626,8 +631,8 @@ cite{
     width: 370px;
     padding: 10px;
     background-color: #DAA520;
-    border-bottom: 5px solid #e7c323;
     transition: .25s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .achievements-diagram:hover{
         transform: translateY(-10px);
@@ -723,6 +728,7 @@ cite{
 .goals-img{
     width: 500px;
     height: 325px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
@@ -836,16 +842,15 @@ cite{
     z-index: 0;
 }
 .donate-sub-para{
-    margin-bottom: 10px;
-    text-align: center;
+    margin: 20px 0px;
+    text-align: start;
 }
 .donate-ul{
-    text-align: center;
+    padding-left: 30px;
     margin-bottom: 10px;
     font-size: 18px;
     font-family: var(--fonts);
     font-weight: 500;
-    list-style: none;
 }
 li{
     margin-bottom: 3px;
