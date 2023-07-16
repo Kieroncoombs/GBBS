@@ -2,7 +2,7 @@
 :root {
     --background-color: #131313;
     --negitive-color: #131313;
-    --postive-color: white;
+    --postive-color: #FDFDFD;
     --decal-color: #DAA520;
     --hero-h1: 45px;
     --h1: 60px;
@@ -1035,7 +1035,7 @@ footer{
  /* STORY SECTION */
  /* STORY SECTION */
 
-.s-h-wrapper{
+.sub-head-wrapper{
     max-width: 80rem;
     margin: 0 auto 0px auto; 
 }
