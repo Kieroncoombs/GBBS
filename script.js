@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.querySelector("body")
     const valueDisplay = document.querySelectorAll(".achievements-num")
     const interval = 500;
-    const achievements = document.getElementById("acheivements")
+
     let showNavbar = false;
   
     toggleBtn.addEventListener("click", function() {
@@ -72,6 +72,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+const quoteList = ["The bee is a symbol of community, cooperation, and the collective power of individuals working together for a greater good.", "A bee is a marvel of beauty and productivity, a symbol of nature's perfect harmony and intricate design.", "The bee is more fascinating than the lion, more amazing than the dolphin, and more essential than any other creature on Earth."]
+let quoteIndex = 0
+
+function quoteChange() {
+  const quote = document.getElementById("quote")
+  quote.textContent = quoteList[quoteIndex];
+  quoteIndex = (quoteIndex + 1) % quoteList.length
+  setTimeout(quoteChange, 10000)
+}
+
+quoteChange()
 
 const slides = document.getElementsByClassName("donate-carousel-item");
 const nextButton = document.getElementById("carousel-button-next");

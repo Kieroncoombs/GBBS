@@ -101,7 +101,9 @@ img{
     margin: 0 auto 0px auto; 
 }
 .lrg-pad-wrapper{
-padding-top: 45px;
+    max-width: 80rem;
+    margin: 0 auto 0 auto;
+    padding: 45px 0 30px 0;
 }
 .alt-section{
     background-color: #DAA520;
@@ -120,6 +122,11 @@ padding-top: 45px;
     .alt-wrapper{
         margin: 0 20px; 
         padding-top: 0px;
+    }
+    .lrg-pad-wrapper{
+        max-width: 80rem;
+        margin: 0 20px;
+        padding: 30px 0 30px 0;
     }
     .left-to-mid{
         text-align: center;
@@ -1121,6 +1128,7 @@ footer{
     }
     .s-c-box{
         flex-direction:column-reverse;
+        margin-bottom: 10px;
     }
     .s-c-img{
         max-width: 100%;
@@ -1133,6 +1141,7 @@ footer{
     }
     .s-c-left{
         width: 100%;
+        padding-right: 0;
     }
 }
 @media only screen and (max-width: 770px) {
