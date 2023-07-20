@@ -79,7 +79,7 @@ function quoteChange() {
   const quote = document.getElementById("quote")
   quote.textContent = quoteList[quoteIndex];
   quoteIndex = (quoteIndex + 1) % quoteList.length
-  setTimeout(quoteChange, 10000)
+  // setTimeout(quoteChange, 10000)
 }
 
 quoteChange()

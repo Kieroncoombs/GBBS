@@ -851,7 +851,7 @@ cite{
 }
 .donate-span{
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 600;
     font-family: var(--fonts);
     color: var(--postive-color);
     z-index: 0;
