@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
     --background-color: #131313;
     --negitive-color: #131313;
@@ -50,13 +50,13 @@ h1{
     font-family: var(--fonts);
     font-size: var(--h1);
     margin-bottom: var(--head-marg);
-    font-weight: 800;
+    font-weight: 600;
 }
 h2{
     font-size: var(--h2);
     color: var(--postive-color);
     font-family: var(--fonts);
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 15px;
 }
 h3{
@@ -114,7 +114,7 @@ img{
 .center-header{   
     text-align: center;
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
     .wrapper{
         margin: 0 20px;
         padding: 20px 0;
@@ -131,7 +131,11 @@ img{
     .left-to-mid{
         text-align: center;
     }
+    img{
+        width: 100%;
+    }
 }
+
 
 
     /* CUSTOM CLASSES */
@@ -206,7 +210,7 @@ a:hover {
     .small-navbar{
         top: 0;
         width: 100%;
-        padding: 0px 10px;
+        padding: 0px 12px;
         position: fixed;
         z-index: 5;
         display: flex;
@@ -219,6 +223,7 @@ a:hover {
         display: flex;
         width: 150px;
         height: 40px;
+        margin-left: 5px;
     }
     .big-logo{
         display: none;
@@ -272,9 +277,6 @@ a:hover {
     img{
         width: 200px;
         height: 50px;
-        margin: 0 5px;
-        display: flex;
-        align-items: center;
     }
     .img-logo{
         width: 100%;
@@ -542,26 +544,23 @@ q{
     padding-top: 75px;
 }
 .article-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
+    width: 100%;
+    text-align: center;
 }
 .article-box{  
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px 30px 0px 30px;
+    text-align: start;
+    display: inline-block;
+    width: 30%;
+    margin:0 10px;
 }
 .article-author{
     text-align: start;
     margin: 10px 0;
 }
 .art-img{
-    width: 350px;
-    height: 220px;
+   width: 100%;
+   aspect-ratio: 16 / 9;
+   object-fit: cover;
     margin: 0;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -601,13 +600,19 @@ cite{
 .article-linkbox{
     margin-top: 15px;
 }
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 770px) {
   
-  .art-img{
-    width: 330px;
-    height: 200px;
+    .art-img{
     margin: 0;
-    
+    height: auto;
+    }
+    .article-box{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .article-content{
+        max-width: none;
+        width: 100%;
     }
  }
 
@@ -749,12 +754,15 @@ cite{
         height: 100%;
         margin: 0 auto 0 auto;
        }
-       .goals-img{
-        width: 400px;
-        height: 250px;
-    }
 }
 @media only screen and (max-width: 770px) {
+    .goals-img{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        height: auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
    .goal{
     flex-direction: column;
     gap: 0;
@@ -869,7 +877,7 @@ li{
 .donate-subscription{
     text-align: center;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1300px) {
     .donate-box{
         display: none;
     }
@@ -939,7 +947,7 @@ li{
     
 
 }
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
     .donate-wrapper{
         margin: 0 20px;
         padding: 40px 0;
@@ -1138,6 +1146,7 @@ footer{
     .s-c-right{
         justify-content: center;
         margin-bottom: 30px;
+        margin-inline:0 ;
     }
     .s-c-left{
         width: 100%;
