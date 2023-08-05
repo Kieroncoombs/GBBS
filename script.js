@@ -87,18 +87,23 @@ quoteChange()
 const slides = document.getElementsByClassName("donate-carousel-item");
 const nextButton = document.getElementById("carousel-button-next");
 const prevButton = document.getElementById("carousel-button-prev");
+const nextGoalButton = document.getElementById("goals-btn-right")
+const prevGoalButton = document.getElementById("goals-btn-left")
+const goalItem = document.getElementsByClassName("goal-item")
+const box = document.getElementById("test")
+let goalNum = 0;
+const goalList = goalItem.length
 const dots = document.getElementsByClassName("dot");
 let position = 0;
 const numberOfSlides = slides.length;
   
 
-
-    function hideAllSlides() {
-      for (const slide of slides) {
-          slide.classList.remove("donate-carousel-item-visible");
-          slide.classList.add("donate-carousel-item-hidden");
+function hideAllSlides() {
+  for (const slide of slides) {
+      slide.classList.remove("donate-carousel-item-visible");
+      slide.classList.add("donate-carousel-item-hidden");
       }
-  }
+}
   
   
   const handleMoveToNextSlide = function(e) {
@@ -132,9 +137,48 @@ const numberOfSlides = slides.length;
 nextButton.addEventListener("click", handleMoveToNextSlide);
 prevButton.addEventListener("click", handleMoveToPrevSlide);
 
+function hideGoals() {
+  for (const goal of goalItem) {
+    goal.classList.remove("goal")
+    goal.classList.add("goal-hidden")
+  }
+}
+
+function nextGoal() {
+  hideGoals()
+  if (goalNum === goalList - 1) {
+    goalNum = 0
+  } else {
+    goalNum++
+  }
+  goalItem[goalNum].classList.add("goal")
+}
 
 
+function prevGoal() {
+  hideGoals()
+  if (goalNum === 0) {
+    goalNum = goalList - 1;
+  } else {
+    goalNum--
+  }
+  goalItem[goalNum].classList.add("goal")
+}
 
+// nextGoalButton.addEventListener("click", nextGoal);
+// prevGoalButton.addEventListener("click", prevGoal);
+
+let intervalId = setInterval(nextGoal, 5000);
+box.addEventListener("mouseenter", tested);
+box.addEventListener("mouseleave", setTime);
+
+function tested() {
+  clearInterval(intervalId);
+}
+
+function setTime() {
+  intervalId = setInterval(nextGoal, 5000);
+}
 
 
 

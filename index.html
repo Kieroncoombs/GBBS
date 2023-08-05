@@ -91,34 +91,32 @@
         <section id="goals">
             <div class="wrapper lrg-pad-wrapper">
                 <h1 class="center-header">What we've done</h1>
-                <div class="goals-box">
-                    <div class="goal g-1">
-                        <div class="goals-description">
-                            <h2 class="left-to-mid">Created bee-friendly habitats</h2>
-                            <p> Our large team are planting native flowers, shrubs, and trees that provide bees with a diverse and abundant source of nectar and pollen. This helps sustain bee populations and supports their health.</p>
-                        </div>
+                <div id="test" class="goals-box">
+                    <div  class=" goal-item goal g-1">
                         <div class="goal-img-wrap">
                             <img class="goals-img" src="imgs/beekeeper.jpg" alt="">
                         </div>
+                        <h2>Created bee-friendly habitats</h2>
+                        <p>Our large team are planting native flowers, shrubs, and trees that provide bees with a diverse and abundant source of nectar and pollen. This helps sustain bee populations and supports their health.</p>
                     </div>
-                    <div class="goal g-2">
-                        <div class="goals-description">
-                            <h2 class="left-to-mid">Supported local beekeepers</h2>
-                            <p> promoting local honey and supporting local beekeepers helps sustain their operations and promotes the health of honeybee populations.</p>
-                        </div>
+                    <div class=" goal-item goal-hidden g-2">
                         <div class="goal-img-wrap">
                             <img class="goals-img" src="imgs/beekeeper2.jpg" alt="">
                         </div>
+                        <h2>Supported local beekeepers</h2>
+                        <p>We help with promoting local honey and supporting local beekeepers helps sustain their operations and promotes the health of honeybee populations.</p>
                     </div>
-                    <div class="goal g-3">
-                        <div class="goals-description">
-                            <h2 class="left-to-mid">Raised awareness</h2>
-                            <p> We have been Educating others about the importance of bees and the threats they face is crucial. We haev reached out to many individuals, organizations, and schools are organizing workshops, seminars, and awareness campaigns to spread knowledge about bees and their conservation.</p>
-                        </div>
+                    <div class="goal-item goal-hidden g-3">
                         <div class="goal-img-wrap">
                             <img class="goals-img" src="imgs/talk.jpg" alt="">
                         </div>
+                        <h2>Raised awareness</h2>
+                        <p>We have been Educating others about the importance of bees and the threats they face is crucial. We haev reached out to many individuals, organizations, and schools are organizing workshops, seminars, and awareness.</p>
                     </div>
+                    <!-- <div class="goal-btn">
+                        <button id="goals-btn-left" class="goal-left-btn"><</button>
+                        <button id="goals-btn-right" class="goal-right-btn">></button>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -156,48 +154,61 @@
             <h1>Articles</h1>
             <p>Interested so far? Here are some articles written by our friends across the world!</p>
             <div class="article-container">
-                <div class="article-box">
-                    <div class="article-img">
-                        <img src="imgs/article1.jpg" alt="Bees in Bee Hive" class="art-img">
-                    </div>
-                    <div class="article-content">
-                        <div class="article-author">
-                            <h3>Green Peace: </h3>
-                            <cite>Written by: Green Peace</cite>
+                <div class="articles-box-wrap">
+                    <div class="article-box">
+                        <div class="article-img">
+                            <img src="imgs/article1.jpg" alt="Bees in Bee Hive" class="art-img">
                         </div>
-                        <q class="article-tag">Honey isn’t the only thing bees give us. They also provide us with food by pollinating a huge range of crops, not to mention wild plants. But like many other parts of the natural world, bees are at risk and the way we produce our food is to blame.</q>
-                        <div class="article-linkbox">
-                            <a href="https://rb.gy/5umjz" class="article-link">Read Here</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="article-box">
-                    <div class="article-img">
-                        <img src="imgs/article2.jpg" alt="Bees in Bee Hive" class="art-img">
-                    </div>
-                    <div class="article-content">
-                        <div class="article-author">
-                            <h3>Woodland Trust: </h3>
-                            <cite>Written by: Charlotte Varela</cite>
-                        </div>
-                        <q class="article-tag">Why are bees important? And how can you help them?</q>
-                        <div class="article-linkbox">
-                            <a href="https://www.woodlandtrust.org.uk/blog/2023/04/why-are-bees-important/" class="article-link">Read Here</a>
+                        <div class="article-content">
+                           <div class="article-content-wrap">
+                            <div class="article-author">
+                                <h3>Green Peace: </h3>
+                                <cite>Written by: Green Peace</cite>
+                            </div>
+                            <q class="article-tag">Honey isn’t the only thing bees give us. bees are at risk and the way we produce our food is to blame.</q>
+                           </div>
+                            <div class="article-linkbox">
+                                <a href="https://rb.gy/5umjz" class="article-link">Read Here</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="article-box">
-                <div class="article-img">
-                    <img src="imgs/article3.jpg" alt="Bees in Bee Hive" class="art-img">
-                </div>
-                <div class="article-content">
-                    <div class="article-author">
-                        <h3>Medical News Today:</h3>
-                        <cite>Written by: Helen Millar</cite>
+                <div class="articles-box-wrap">
+                    <div class="article-box">
+                        <div class="article-img">
+                            <img src="imgs/article2.jpg" alt="Bees in Bee Hive" class="art-img">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-content-wrap">
+                                <div class="article-author">
+                                    <h3>Woodland Trust: </h3>
+                                    <cite>Written by: Charlotte Varela</cite>
+                                </div>
+                                <q class="article-tag">Whether they're brightly striped, extravagantly fluffy or smaller than your thumbnail, bees are vital to our planet. They're also in big trouble.</q>
+                            </div>
+                            <div class="article-linkbox">
+                                <a href="https://www.woodlandtrust.org.uk/blog/2023/04/why-are-bees-important/" class="article-link">Read Here</a>
+                            </div>
+                        </div>
                     </div>
-                    <q class="article-tag">Bees are essential for the health of people and the planet. Honey and other products have medicinal properties, and the role of bees as pollinators makes them vital for food supplies</q>
-                    <div class="article-linkbox">
-                    <a href="https://www.medicalnewstoday.com/articles/why-are-bees-important-to-humans" class="article-link">Read Here</a>
+                </div>
+                <div class="articles-box-wrap">
+                    <div class="article-box">
+                        <div class="article-img">
+                            <img src="imgs/article3.jpg" alt="Bees in Bee Hive" class="art-img">
+                        </div>
+                        <div class="article-content">
+                            <div class="article-content-wrap">
+                                <div class="article-author">
+                                    <h3>Medical News Today: </h3>
+                                    <cite>Written by: Helen Millar</cite>
+                                </div>
+                                <q class="article-tag">Bees are essential for the health of people and the planet. Honey and other products have medicinal properties, and the role of bees as pollinators makes them vital for food supplies.</q>
+                            </div>
+                            <div class="article-linkbox">
+                            <a href="https://www.medicalnewstoday.com/articles/why-are-bees-important-to-humans" class="article-link">Read Here</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 </div>
@@ -228,7 +239,7 @@
                                     <p> We revise and research the best ways to make the most of every penny! </p>
                                 </div>         
                                 <div class="donate-subscription">
-                                    <button class="donate-btn"><span>DONATE</span></button>
+                                    <a class="donate-sec-btn">DONATE</a>
                                 </div>     
                             </div>
                             <div class="donate-sub">
@@ -244,7 +255,7 @@
                                     </ul> 
                                 <p class="donate-sub-para">Remember, even with a modest budget, you can make a significant impact on bee conservation.</p>
                                 <div class="donate-subscription">
-                                    <button class="donate-btn"><span>DONATE</span></button>
+                                    <a class="donate-sec-btn">DONATE</a>
                                 </div>     
                             </div>
                             <div class="donate-sub">
@@ -260,7 +271,7 @@
                                 </ul> 
                                 <p class="donate-sub-para">your donations allows us the opportunity to make a greater impact on bee conservation!</p>
                                 <div class="donate-subscription">
-                                    <button class="donate-btn"><span>DONATE</span></button>
+                                    <a class="donate-sec-btn">DONATE</a>
                                 </div>    
                             </div>             
                         </div>
@@ -282,7 +293,7 @@
                                                 <p class="donate-sub-para"> We revise and research the best ways to make the most of every penny! </p>
                                         </div>
                                         <div class="donate-subscription">
-                                            <button class="donate-btn"><span>DONATE</span></button>
+                                            <a class="donate-sec-btn">DONATE</a>
                                         </div>                                        
                                     </div>
                                 </div>
@@ -302,7 +313,7 @@
                                             <p class="donate-sub-para">A chairitble amount that goes a very long way!</p>
                                         </div>                                        
                                         <div class="donate-subscription">
-                                            <button class="donate-btn"><span>DONATE</span></button>
+                                            <a class="donate-sec-btn">DONATE</a>
                                         </div>     
                                     </div>
                                 </div>
@@ -322,7 +333,7 @@
                                             <p class="donate-sub-para">your donations allows us the opportunity to make a greater impact on bee conservation!</p>
                                         </div>                                        
                                         <div class="donate-subscription">
-                                            <button class="donate-btn"><span>DONATE</span></button>
+                                            <a class="donate-sec-btn">DONATE</a>
                                         </div>     
                                     </div>
                                 </div>
