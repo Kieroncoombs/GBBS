@@ -842,7 +842,6 @@ cite{
         aspect-ratio: 16 / 9;
         object-fit: cover;
         height: auto;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
    .goal{
     flex-direction: column;
