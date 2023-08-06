@@ -795,7 +795,6 @@ cite{
 .goal-img-wrap {
     height: auto;
     width: 100%;
-    box-shadow: inset 0px 0px 66px 0px var(--background-color);
 }
 .goal-btn{
     text-align: center;
