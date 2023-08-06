@@ -390,6 +390,7 @@ a:hover {
     border-radius: 7px;
     height: max-content;
     padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 @media only screen and (max-width: 1100px) {
     .header{
@@ -496,11 +497,15 @@ a:hover {
     text-align:start;
   }
   .mission-key{
-    width: 210px;
-    height: 240px;
+    width: 250px;
+    height: 270px;
+    margin: 10px 0;
   }
   .icon {
     font-size: 6rem;
+  }
+  .mission-box-wrapper{
+    padding-bottom: 30px;
   }
 }
 
@@ -518,8 +523,16 @@ q{
     margin: 10px 0;
     display: inline-block;
 }
+@media only screen and (max-width: 440px) {
+    .quote{
+        padding: 10px 0;
+    }
+}
+
 
 /* ARTICLES SECTION*/
+
+
 .articles-section{
     background-color: #202020;
 }
@@ -562,7 +575,6 @@ q{
    aspect-ratio: 16 / 9;
    object-fit: cover;
     margin: 0;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .article-content-wrap{
     padding: 10px ;
@@ -930,6 +942,7 @@ cite{
     width: 100%;
     bottom: 0;
     left: 0;
+    transition: 0.2s ease;
 }
 .donate-sec-btn:hover{
     color: black;
